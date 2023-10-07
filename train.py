@@ -205,7 +205,7 @@ if __name__ == '__main__':
 
     best = 0
 
-    params = model.parameters() #model.parameters()保存的是Weights和Bais参数的值。
+    params = model.parameters()
 
     if opt.optimizer == 'AdamW':
         optimizer = torch.optim.AdamW(params, opt.lr, weight_decay=1e-4)
